@@ -1,19 +1,17 @@
-
 import React from "react";
+import { useNavigate } from "react-router";
 
+const OnSecondPageButton = () => {
+  const navigate= useNavigate();
+  const go =()=> navigate('/about')
+  return (
+    <div>
+      <button className="submit" type="onsubmit" onClick={go} >
+        {" "}
+        Войти{" "}
+      </button>
+    </div>
+  );
+};
 
-
-class OnSecondPageButton  extends React.Component {
-  
-  onclick () {
-    window.location.assign('http://localhost:3000/about');
-  }
-  
-  render() {
-    return (
-    <button  className="submit" type="onSubmit"  onClick={(e) => this.onclick(e)}> Войти </button>
-    );
-  }
-  
-}
 export default OnSecondPageButton;

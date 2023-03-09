@@ -1,0 +1,284 @@
+.modalAddservice {
+    width: 900px;
+    height: 1080px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 54%;
+    opacity: 0;
+    pointer-events: none;
+   
+    
+    
+}
+.modalAddservice.active {
+    opacity: 1;
+    pointer-events: all;
+   
+ 
+}
+.Addservice{
+    position: absolute;
+    top: 1020px;
+    border: none;
+  outline: none;
+  background: transparent;
+}
+.Arhiv{
+    left: 40px;
+}
+.Delit{
+    left: 197px;
+}
+.Save{
+    left: 720px;
+}
+
+.Addservicehead{
+    position: absolute;
+width: 190px;
+height: 38px;
+left: 40px;
+top: 60px;
+ font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+}
+.AddserviceConteiner1{
+    position: absolute;
+    left: 40px;
+    top: 128px;
+}
+.AddserviceConteiner2{
+    position: absolute;
+    left: 40px;
+    top: 213px;
+}
+.AddserviceConteiner3{
+    position: absolute;
+    left: 460px;
+    top: 213px;
+}
+.AddserviceConteiner4{
+    position: absolute;
+    left: 40px;
+    top: 298px;
+}
+.AddserviceConteiner5{
+    position: absolute;
+    left: 460px;
+    top: 298px;
+}
+.AddserviceConteiner6{
+    position: absolute;
+    left: 40px;
+    top: 383px;
+}
+.AddserviceConteiner7{
+    position: absolute;
+    left: 460px;
+    top: 383px;
+}
+.AddserviceConteiner8{
+    position: absolute;
+    left: 40px;
+    top: 468px;
+}
+.AddserviceConteiner9{
+    position: absolute;
+    left: 460px;
+    top: 468px;
+}
+.AddserviceConteiner10{
+    position: absolute;
+    left: 40px;
+    top: 553px;
+}
+.AddserviceConteiner11{
+    position: absolute;
+    left: 460px;
+    top: 553px;
+}
+.AddserviceConteiner12{
+    position: absolute;
+    left: 40px;
+    top: 638px;
+}
+.AddserviceConteiner13{
+    position: absolute;
+    left: 460px;
+    top: 638px;
+}
+.AddserviceConteiner14{
+    position: absolute;
+    left: 40px;
+    top: 723px;
+}
+.AddserviceConteiner15{
+    position: absolute;
+    left: 460px;
+    top: 723px;
+}
+.AddserviceText{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #002C44;
+opacity: 0.5;
+}
+.AddserviceButton{
+    border: 2px solid rgba(0, 44, 68, 0.25);
+border-radius: 6px;
+background: #FFFFFF;
+width:400px ;
+height:40px ;
+}
+.AddserviceMassiv{
+    position: absolute;
+    left: 15px;
+    top: 56px;
+}
+.AddserviceMassivtext{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #002C44;
+}
+.AddserviceMassivnumb{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+}
+.AddserviceExit{
+    position: absolute;
+    left: 857.64px;
+    top: 29.64px;
+    border: none;
+  outline: none;
+  background: transparent;
+}
+.modalDisplaycolumns{
+    width: 515px;
+height: 1080px;
+    background-color:#FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.modalDisplaycolumns.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.Displaycolumnsheader{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+color: #002C44;
+}
+.Displaycolumns0{
+    position: absolute;
+    left: 61px;
+    top: 135.34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.Displaycolumnsol{
+    position: absolute;
+    top: 176px;
+    left: 16px;
+    display: block;
+    
+}
+.Displaycolumnsli{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.DisplaycolumnsStrelkiConteiner{
+    position: absolute;
+    left: 384.13px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.DisplaycolumnsStrelkiButton{
+    border: none;
+    outline: none;
+    background: transparent;
+    opacity: 0.5;
+    width: 19.57px;
+    height: 18px;
+}
+.DisplaycolumnsExit{
+    position: absolute;
+    left: 477.67px;
+    top: 29.64px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.DisplaycolumnsSbros{
+    position: absolute;
+    left: 40px;
+    top: 865px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.DisplaycolumnsPrim{
+    position: absolute;
+    left:335px;
+    top: 865px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.Displaycolumnstext{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #002C44;
+}
+.modalBack{
+    transform: scale(0);
+    height: 0;
+    
+}
+.modalBack.active{
+    transform: scale(1);
+    height: 0;
+    
+}
+.modalcontentBack{
+    width: 196px;
+    height: 110px;
+}

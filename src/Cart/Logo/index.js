@@ -9,11 +9,11 @@
 }
 export default Botton */
 
-import logo from './img/logo.svg'
+import logo from '../../Image/logo.svg'
 const Logo = () => {
     return <div>
-        <div className="logo">
-            <img src={logo} alt="" />
+        <div>
+            <img className="logoHeader" src={logo} alt="" />
         </div>
     </div>
 }

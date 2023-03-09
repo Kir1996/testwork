@@ -1,11 +1,11 @@
-import group from "./group.svg"
+import group from "../../../Image/group.svg"
 
 
 
 const Edit = () => {
     return (
         <div>
-            <button className="backButton">
+            <button className="backButton ">
                 <div>
                 < img src={group} alt="" />
                 </div>

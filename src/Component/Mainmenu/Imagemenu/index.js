@@ -1,4 +1,4 @@
-import jj from "./jj.svg";
+import jj from "../../../Image/jj.svg";
 
 const Imagemenu = () => {
   return (

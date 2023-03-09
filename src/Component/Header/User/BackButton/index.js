@@ -1,27 +1,26 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
-class BackButton extends React.Component {
-  onclick() {
-    window.location.assign("http://localhost:3000/");
-  }
 
-  render() {
-    return (
-      <div className="backButtonConteiner">
+const BackButton = () => {
+  const navigate= useNavigate();
+  const goback =()=> navigate('/')
+  return (
+    <div className="backButtonConteiner">
+      {" "}
+      <button
+        className="backButton"
+        type="submit"
+        onClick={goback}
+      >
         {" "}
-        <button
-          className="backButton"
-          type="submit"
-          onClick={(e) => this.onclick(e)}
-        >
-          {" "}
-          Выйти{" "}
-        </button>
-        <button className="backButton" type="submit">
-          Профиль
-        </button>{" "}
-      </div>
-    );
-  }
-}
+        Выйти{" "}
+      </button>
+      <button className="backButton" type="submit">
+        Профиль
+      </button>{" "}
+    </div>
+  );
+};
+
 export default BackButton;

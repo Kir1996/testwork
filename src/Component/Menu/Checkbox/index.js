@@ -1,8 +1,8 @@
 
 const Checkbox =() => {
     return (
-        <div>
-        <input type="checkbox" />
+        <div className="conteinerOject1">
+        <input className="checkbox" type="checkbox" />
         </div>
     )
 }

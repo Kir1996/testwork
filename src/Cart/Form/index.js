@@ -1,51 +1,93 @@
-import { Formik, Field, Form} from "formik";
-//import * as yup from "yup";
+import { Formik, Field, Form } from "formik";
+import { useNavigate } from "react-router";
+import * as yup from "yup";
+import logo from '../../Image/logo.svg'
+
 //import OnSecondPageButton from "../Button";
 //import React,{useState} from 'react';
 //import OnSecondPageButton from "./Cart/Botton/indexButton.js"
-function validateEmail(value) {
+/*function validateEmail(value) {
   let error;
   if (!value) {
-    error = 'Required';
+    error = "Required";
   } else if (!/^[dexem]+@[mail]+\.[ru]{2,4}$/i.test(value)) {
-    error = 'Invalid email address';
+    error = "Invalid email address";
   }
   return error;
-}
+}*/
 
-function validatePassword(value) {
+/*function validatePassword(value) {
   let error;
-  if (value === '') {
-    error = 'Wrong password';
+  if (value === "") {
+    error = "Wrong password";
   }
   return error;
 }
-const Forma = () => {
-  return (
-    <div>
-     <Formik
-      initialValues={{
-        email: '',
-        password: '',
-      }}
-      onSubmit={values => {
-        // same shape as initial values
-        console.log(values);
-      }}
-    >
-      {({ errors, touched, validateField, validateForm }) => (
-        <Form className="formick">
-          <Field className="forms" name="email" validate={validateEmail} placeholder="Электронная почта"/>
-          {errors.email && touched.email && <div>{errors.email}</div>}
+function OnSecondPageButton(value) {
+  onclick () {
+    window.location.assign('http://localhost:3000/about');
+  }
+  
+    return (
+    <button  className="submit" type="onSubmit"  onClick={(e)}> Войти </button>
+    );
+  }
+  */
+const Cart = () => {
+  const navigate = useNavigate();
+  const  go = () => navigate("/about");
+  const validationsSchema = yup.object().shape({
+    email: yup.string().email('Введите верный email').required('Обязательно'),
+    password: yup.string().typeError('Должно быть строкой').required('Обязательно'), 
+  })
 
-          <Field className="forms" name="password" validate={validatePassword} placeholder="Пароль" />
-          {errors.password && touched.password && <div>{errors.password}</div>}
-        </Form>
-      )}
-    </Formik>
+  return (
+    <div className="Forma">
+       <div className="logo">
+            <img  src={logo} alt="" />
+        </div>
+
+      <Formik
+        initialValues={{
+          email: "",
+          password: "",
+        }}
+        validateOnBlur
+        onSubmit={(values) => { console.log(values) }}
+        validationSchema={validationsSchema}
+      >
+        {({ values, errors, touched, handleChange, handleBlur, isValid, handleSubmit, dirty, onClick }) => (
+          <Form className="formick">
+            <Field
+              className="forms"
+              name="email"
+              type={"email"}
+              value={values.email}
+              placeholder="Электронная почта"
+            />
+              {touched.email && errors.email && <p className={'error'}>{errors.email}</p>}
+
+            <Field
+              className="forms"
+              name="password"
+              type={"password"}
+              onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.password}
+                placeholder="Пароль"
+            />
+                 {touched.password && errors.password && <p className={'error'}>{errors.password}</p>}
+        <button className="submit"  type={"submit"} onClick={go}   disabled={!isValid || !dirty}>
+          {" "}
+          Войти{" "}
+        </button>
+          </Form>
+        )}
+      </Formik>
     </div>
   );
 };
+export default Cart;
 
 /*
     <Formik
@@ -84,7 +126,6 @@ const Forma = () => {
     </Formik>
   </div>
 );*/
-export default Forma;
 /*const Form = () => {
   return (
     <div>
