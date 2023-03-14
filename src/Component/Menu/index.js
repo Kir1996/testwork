@@ -1,14 +1,16 @@
 //import Checkbox from "./Checkbox";
 //import Edit from "./Edit";
-import Table from "./Objects1";
-
+//import Table from "./Objects1";
+import Classifier from "../Menu/Classifier"
 import React from "react";
+
+
 
 
 const Menu = () => {
   return (
     <div>
-      <Table />
+      <Classifier />
     </div>
   );
 };

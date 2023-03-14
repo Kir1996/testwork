@@ -2,7 +2,7 @@ import jj from "../../../Image/jj.svg";
 
 const Imagemenu = () => {
   return (
-    <div>
+    <div className="Imagemenu">
       <img src={jj} alt="" />
     </div>
   );

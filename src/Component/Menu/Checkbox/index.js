@@ -1,9 +1,21 @@
 
-const Checkbox =() => {
+const Checkbox = ({
+    label = "",
+    onChange = () => {},
+    checked = false,
+    value = "",
+  }) => {
     return (
-        <div className="conteinerOject1">
-        <input className="checkbox" type="checkbox" />
-        </div>
-    )
-}
+      <label className="conteinerOject1">
+        <span>{label}</span>
+        <input
+          className="checkbox"
+          type="checkbox"
+          onChange={onChange}
+          value={value}
+          checked={checked}
+          />
+      </label>
+    );
+};
 export default Checkbox

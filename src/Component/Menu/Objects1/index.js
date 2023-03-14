@@ -1,11 +1,11 @@
 //import Checkbox from "../Checkbox";
 import Edit from "../Edit";
 import Checkbox from "../Checkbox"
-import React, { useState } from 'react';
-const Massiv = [
+
+export const Massiv = [
     {
         
-        id:1,
+        id:"1",
         сompositecode: <div className="conteinerOject1 Object1">  <Checkbox/> <Edit/><span>10.10.10.10.11</span></div>,
         businessline: <span className="Object2">Облачные услуги</span>,
         lob: <span className="Object3">10</span>,
@@ -21,10 +21,11 @@ const Massiv = [
         unitbilling: <span className="Object13">ВМ vCPU</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation:<span className="Object15">да</span>,
+        show: true,
 
     },
     {
-        id:2,
+        id:"2",
        
         сompositecode:  <div className="conteinerOject1 Object1">  <Checkbox/><Edit/><span>10.10.10.10.21</span></div>,
         businessline:<span className="Object2">Облачные услуги</span>,
@@ -41,10 +42,10 @@ const Massiv = [
         unitbilling: <span className="Object13">1 vRAM GB*час</span>,
         faretype: <span className="Object14">flat rate</span>,
         recalculation: <span className="Object15"></span>,
-
+        show: true,
     },
     {
-        id:3,
+        id:"3",
         
         сompositecode: <div className="conteinerOject1 Object1">  <Checkbox/><Edit/> <span>10.10.10.10.31</span></div>,
         businessline: <span className="Object2">Облачные услуги</span>,
@@ -61,10 +62,10 @@ const Massiv = [
         unitbilling: <span className="Object13">1 Пул ресурсов</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
     {
-        id:4,
+        id:"4",
         
         сompositecode: <div className="conteinerOject1 Object1">  <Checkbox/><Edit/> <span>10.10.10.10.12</span></div>,
         businessline: <span className="Object2">Облачные услуги</span>,
@@ -81,7 +82,7 @@ const Massiv = [
         unitbilling: <span className="Object13">ВМ vCPU</span>,
         faretype:<span className="Object14"> usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:5,
@@ -101,7 +102,7 @@ const Massiv = [
         unitbilling: <span className="Object13">1 vRAM GB*час</span>,
         faretype: <span className="Object14">flat rate</span>,
         recalculation:<span className="Object15"> </span>,
-
+        show: true,
     },
     {
         id:6,
@@ -121,7 +122,7 @@ const Massiv = [
         unitbilling: <span className="Object13">1 Пул ресурсов</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:7,
@@ -141,7 +142,7 @@ const Massiv = [
         unitbilling: <span className="Object13">ВМ vCPU</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:8,
@@ -161,7 +162,7 @@ const Massiv = [
         unitbilling: <span className="Object13">1 vRAM GB*час</span>,
         faretype: <span className="Object14">flat rate</span>,
         recalculation: <span className="Object15"></span>,
-
+        show: true,
     },
     {
         id:9,
@@ -181,7 +182,7 @@ const Massiv = [
         unitbilling:<span className="Object13"> 1 Пул ресурсов</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:10,
@@ -201,7 +202,7 @@ const Massiv = [
         unitbilling: <span className="Object13">ВМ vCPU</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation:<span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:11,
@@ -221,7 +222,7 @@ const Massiv = [
         unitbilling: <span className="Object13">1 vRAM GB*час</span>,
         faretype: <span className="Object14">flat rate</span>,
         recalculation: <span className="Object15"></span>,
-
+        show: true,
 
     },
     {
@@ -242,7 +243,7 @@ const Massiv = [
         unitbilling: <span className="Object13">1 Пул ресурсов</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:13,
@@ -262,6 +263,7 @@ const Massiv = [
         unitbilling: <span className="Object13">ВМ vCPU</span>,
         faretype:<span className="Object14"> usage based</span>,
         recalculation: <span className="Object15">да</span>,
+        show: true,
     },
     {
         id:14,
@@ -281,7 +283,7 @@ const Massiv = [
         unitbilling: <span className="Object13">1 vRAM GB*час</span>,
         faretype: <span className="Object14">flat rate</span>,
         recalculation:<span className="Object15"> </span>,
-
+        show: true,
     },
     {
         id:15,
@@ -301,7 +303,7 @@ const Massiv = [
         unitbilling: <span className="Object13">1 Пул ресурсов</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:16,
@@ -321,7 +323,7 @@ const Massiv = [
         unitbilling: <span className="Object13">ВМ vCPU</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:17,
@@ -341,7 +343,7 @@ const Massiv = [
         unitbilling: <span className="Object13">1 vRAM GB*час</span>,
         faretype: <span className="Object14">flat rate</span>,
         recalculation: <span className="Object15"></span>,
-
+        show: true,
     },
     {
         id:18,
@@ -361,7 +363,7 @@ const Massiv = [
         unitbilling:<span className="Object13"> 1 Пул ресурсов</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:19,
@@ -381,7 +383,7 @@ const Massiv = [
         unitbilling: <span className="Object13">ВМ vCPU</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation:<span className="Object15">да</span>,
-
+        show: true,
     },
     {
         id:20,
@@ -401,7 +403,7 @@ const Massiv = [
         unitbilling: <span className="Object13">1 vRAM GB*час</span>,
         faretype: <span className="Object14">flat rate</span>,
         recalculation: <span className="Object15"></span>,
-
+        show: true,
     },
     {
         id:21,
@@ -421,15 +423,16 @@ const Massiv = [
         unitbilling: <span className="Object13">1 Пул ресурсов</span>,
         faretype: <span className="Object14">usage based</span>,
         recalculation: <span className="Object15">да</span>,
-
+        show: true,
     },
 
     
 
     
 ];
+export default Massiv 
 
-function Table() {
+/*function Table() {
     const [objArr, setValue] = useState(Massiv);
     
     const result = objArr.map((obj) => {

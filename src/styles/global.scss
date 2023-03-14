@@ -114,6 +114,7 @@ line-height: 19px;
   margin: auto;
   align-items: center;
 }
+
 .Mainheader {
   display: flex;
   align-items: center;
@@ -259,6 +260,12 @@ margin-left: 20px;
   position: relative;
   top: -8px;
 }
+
+
+.Imagemenu{
+  width: 14px;
+  height: 9.33px;
+}
 .Mainmenu{
  
   margin: auto;
@@ -271,8 +278,14 @@ margin-left: 20px;
   display: flex;
   align-items: center;
   list-style-type: none;
-  margin-left: 35px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
  padding: 0;
+ color: #002C44;
+ 
   
 
 }
@@ -286,15 +299,25 @@ margin-left: 20px;
   line-height: 16px;
 
 }
-.linkmenu1{
+.linkmenu18 {
+  display: flex;
+  align-items: center;
+}
+.linkmenu0{
   margin-left: 35px;
+}
+.linkmenu1{
   gap: 5px;
   padding: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
 }
 .linkmenu2{
   margin-left: 20px;
   gap: 5px;
   padding: 0;
+  
 }
 .linkmenu3{
   margin-left: 20px;
@@ -365,4 +388,26 @@ padding: 0;
 .checkbox{
   width: 18px;
   height: 18px;
+  
+}
+.td{
+  display: flex;
+  align-items: center;
+  margin-top: -3px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 27px;
+  
+}
+.thead{
+  background: #E5E5E5;
+  margin: 0;
+  width: 1920px;
+  height: 60px;
+}
+.table{
+  margin-top: -2px;
 }
